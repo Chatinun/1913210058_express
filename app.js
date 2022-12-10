@@ -12,7 +12,7 @@ const staffRounter = require('./routes/staff');
 var app = express();
 
 mongoose.connect('mongodb+srv://chatinun:SwxOVC7lSMqdaYu0@1913210058-max.x1dnkvw.mongodb.net/restfulapi?retryWrites=true&w=majority',
-                {useNewUrlParser: true, useUnifiedTopology: true});
+                {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 app.use(logger('dev'));
 app.use(express.json());
