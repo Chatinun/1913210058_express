@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var companyRouter = require('./routes/company');
 const staffRounter = require('./routes/staff');
+const shopRounter = require('./routes/shop');
 
 var app = express();
 
@@ -24,5 +25,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/company', companyRouter);
 app.use('/staff', staffRounter);
+app.use('/shop',shopRounter)
 
 module.exports = app;
