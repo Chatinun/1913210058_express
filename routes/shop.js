@@ -10,4 +10,6 @@ router.get('/menu', shopController.menu);
 
 router.get('/:id', shopController.shopmenu);
 
+router.post('/', shopController.insert);
+
 module.exports = router;
