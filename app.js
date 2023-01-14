@@ -11,6 +11,8 @@ var companyRouter = require('./routes/company');
 const staffRounter = require('./routes/staff');
 const shopRounter = require('./routes/shop');
 
+const errorHandler = require('./middleware/errorHandler');
+
 var app = express();
 
 mongoose.connect(config.MONGODB_URI,
@@ -29,5 +31,7 @@ app.use('/user', usersRouter);
 app.use('/company', companyRouter);
 app.use('/staff', staffRounter);
 app.use('/shop',shopRounter)
+
+app.use(errorHandler);
 
 module.exports = app;
