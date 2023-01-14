@@ -108,6 +108,12 @@ exports.update = async (req, res, next) => {
 			salary: salary
 		})
 
+    if(staff.nModified === 0){
+      const error = new Error("ไม่ได้อัพเดทข้อมูล");
+      error.statusCode = 400;
+      throw error;
+    }
+
     res.status(200).json({
       message: "แก้ไขข้อมูลเรียบร้อยแล้ว",
     });
