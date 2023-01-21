@@ -5,3 +5,4 @@ Chatinun Nuntapasuk (Max): Chapter 4 - Introduction MongoDB
 Chatinun Nuntapasuk (Max): Chapter 5 - Advanced Mongoose
 Chatinun Nuntapasuk (Max): Chapter 6 - Upload File
 Chatinun Nuntapasuk (Max): Chapter 7 - Upload File Base64 & Google Storage
+Chatinun Nuntapasuk (Max): Chapter 8 - Login with JSON WEB TOKEN
