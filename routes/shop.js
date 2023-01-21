@@ -15,8 +15,8 @@ router.post('/',
 [
     body("name").not().isEmpty().withMessage("กรุณาป้อนชื่อสกุลด้วย"),
     body("location").not().isEmpty().withMessage("กรุณาป้อนสถานที่ด้วย"),
-    body("location.lat").isNumeric().withMessage("กรุณากรอกเป็นตัวเลข"),
-    body("location.lgn").isNumeric().withMessage("กรุณากรอกเป็นตัวเลข")
+    body("location.lat").not().isEmpty().withMessage("กรุณาละติจูดด้วย").isNumeric().withMessage("กรุณากรอกเป็นตัวเลข"),
+    body("location.lgn").not().isEmpty().withMessage("กรุณาลองจิจูดด้วย").isNumeric().withMessage("กรุณากรอกเป็นตัวเลข")
 ]
 , shopController.insert);
 
